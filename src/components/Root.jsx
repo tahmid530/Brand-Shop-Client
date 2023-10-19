@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
+import Footer from './Footer';
 
 
 
@@ -10,7 +11,7 @@ const Root = () => {
                 <Header></Header>
                 <Outlet></Outlet>
             </div>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </>
     );
 };
