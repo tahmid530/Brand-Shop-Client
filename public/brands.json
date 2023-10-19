@@ -1,28 +1,28 @@
 [
     {
       "id": 1,
-      "name": "Item 1",
-      "img": "image1.jpg"
+      "name": "Apple",
+      "img": "https://i.ibb.co/X47rrrF/apple.png"
     },
     {
       "id": 2,
-      "name": "Item 2",
-      "img": "image2.jpg"
+      "name": "Google",
+      "img": "https://i.ibb.co/7jYSvz9/google.png"
     },
     {
       "id": 3,
-      "name": "Item 3",
-      "img": "image3.jpg"
+      "name": "Samsung",
+      "img": "https://i.ibb.co/Z2yjJZj/samsung.png"
     },
     {
       "id": 4,
-      "name": "Item 4",
-      "img": "image4.jpg"
+      "name": "Intel",
+      "img": "https://i.ibb.co/JqsJGMR/intel.png"
     },
     {
       "id": 5,
-      "name": "Item 5",
-      "img": "image5.jpg"
+      "name": "Sony",
+      "img": "https://i.ibb.co/L1FHMht/sony.png"
     },
     {
       "id": 6,
