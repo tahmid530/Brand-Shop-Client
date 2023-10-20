@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "Image": "https://i.ibb.co/jVXCcsd/Google-Pixel-6-Pro-1.png",
+    "Name": "Google Pixel 6",
+    "Brand": "Google",
+    "Type": "Phone",
+    "Price": 799.99,
+    "Rating": 4.5,
+    "Details": "The Google Pixel 6 is the latest flagship smartphone from Google, featuring a stunning display, powerful camera system, and the latest Android OS.",
+    "Update": "2023-10-15"
+  },
+  {
+    "Id": 2,
+    "Image": "https://i.ibb.co/2qK9fRS/pngwing-com-4.png",
+    "Name": "Google Pixelbook Go",
+    "Brand": "Google",
+    "Type": "Computer",
+    "Price": 849.99,
+    "Rating": 4.3,
+    "Details": "The Google Pixelbook Go is a premium Chromebook designed for productivity and portability, with a sleek and lightweight design.",
+    "Update": "2023-09-20"
+  },
+  {
+    "Id": 3,
+    "Image": "https://i.ibb.co/8gYszxH/pngwing-com-5.png",
+    "Name": "Google Pixel Buds",
+    "Brand": "Google",
+    "Type": "Headphone",
+    "Price": 179.99,
+    "Rating": 4.0,
+    "Details": "Google Pixel Buds are wireless earbuds that provide high-quality sound and seamless integration with Google Assistant.",
+    "Update": "2023-08-05"
+  },
+  {
+    "Id": 4,
+    "Image": "https://i.ibb.co/NrbVPN4/Png-Item-4443166.png",
+    "Name": "Google Nest Hub",
+    "Brand": "Google",
+    "Type": "Smart Display",
+    "Price": 129.99,
+    "Rating": 4.2,
+    "Details": "The Google Nest Hub is a smart display that can control your smart home devices, display information, and play media.",
+    "Update": "2023-07-12"
+  }
+]

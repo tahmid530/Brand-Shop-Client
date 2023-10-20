@@ -1,0 +1,47 @@
+[
+    {
+      "Id": 1,
+      "Image": "https://i.ibb.co/BLWcxgW/pngwing-com.png",
+      "Name": "iPhone 14 Pro",
+      "Brand": "Apple",
+      "Type": "Phone",
+      "Price": 1299.99,
+      "Rating": 4.7,
+      "Details": "https://www.apple.com/iphone-13-pro/",
+      "Update": "https://www.apple.com/iphone-13-pro/update"
+    },
+    {
+      "Id": 2,
+      "Image": "https://i.ibb.co/WnCNLkC/pngwing-com-1.png",
+      "Name": "MacBook Pro",
+      "Brand": "Apple",
+      "Type": "Computer",
+      "Price": 1299.99,
+      "Rating": 4.9,
+      "Details": "https://www.apple.com/macbook-pro/",
+      "Update": "https://www.apple.com/macbook-pro/update"
+    },
+    {
+      "Id": 3,
+      "Image": "https://i.ibb.co/F5PzRW7/pngwing-com-2.png",
+      "Name": "AirPods Pro",
+      "Brand": "Apple",
+      "Type": "Headphone",
+      "Price": 249.99,
+      "Rating": 4.8,
+      "Details": "https://www.apple.com/airpods-pro/",
+      "Update": "https://www.apple.com/airpods-pro/update"
+    },
+    {
+      "Id": 4,
+      "Image": "https://i.ibb.co/PGdLCLq/pngwing-com-3.png",
+      "Name": "iPad Air",
+      "Brand": "Apple",
+      "Type": "Tablet",
+      "Price": 599.99,
+      "Rating": 4.6,
+      "Details": "https://www.apple.com/ipad-air/",
+      "Update": "https://www.apple.com/ipad-air/update"
+    }
+  ]
+  

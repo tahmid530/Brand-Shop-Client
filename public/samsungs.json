@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Image": "https://i.ibb.co/PjtVzxf/61d4a9d8.png",
+    "Name": "Samsung Galaxy S21",
+    "Brand": "Samsung",
+    "Type": "Phone",
+    "Price": 799.99,
+    "Rating": 4.5,
+    "Details": "The Samsung Galaxy S21 is a flagship smartphone with a stunning display, powerful performance, and a high-quality camera system."
+  },
+  {
+    "Id": 2,
+    "Image": "https://i.ibb.co/cT59fVF/pngegg.png",
+    "Name": "Samsung Galaxy Book Pro",
+    "Brand": "Samsung",
+    "Type": "Computer",
+    "Price": 1099.99,
+    "Rating": 4.8,
+    "Details": "The Samsung Galaxy Book Pro is a sleek and powerful laptop with a bright AMOLED display and excellent performance."
+  },
+  {
+    "Id": 3,
+    "Image": "https://i.ibb.co/bH6k4jp/pngaaa-com-5311398.png",
+    "Name": "Samsung Galaxy Buds Pro",
+    "Brand": "Samsung",
+    "Type": "Headphones",
+    "Price": 169.99,
+    "Rating": 4.6,
+    "Details": "The Samsung Galaxy Buds Pro are wireless earbuds with active noise cancellation and a comfortable fit for long listening sessions."
+  },
+  {
+    "Id": 4,
+    "Image": "https://i.ibb.co/XCc2K9n/samsung-galaxy-tab-s7.png",
+    "Name": "Samsung Galaxy Tab S7",
+    "Brand": "Samsung",
+    "Type": "Tablet",
+    "Price": 649.99,
+    "Rating": 4.7,
+    "Details": "The Samsung Galaxy Tab S7 is a versatile Android tablet with a high-resolution display and S Pen support for productivity."
+  }
+]

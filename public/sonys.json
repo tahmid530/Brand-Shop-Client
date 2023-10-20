@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "Name": "Sony WH-1000XM4",
+    "Image": "https://i.ibb.co/bLt770X/WH1000-XM4-Black.png",
+    "Band": "Sony",
+    "Type": "Headphone",
+    "Price": 349.99,
+    "Rating": 4.8,
+    "Details": "High-quality noise-canceling headphones with premium sound quality and long battery life.",
+    "Update": "2023-10-19"
+  },
+  {
+    "Id": 2,
+    "Name": "Sony Alpha A7 II",
+    "Image": "https://i.ibb.co/QMBct6c/pngwing-com-7.png",
+    "Band": "Sony",
+    "Type": "Camera",
+    "Price": 1999.99,
+    "Rating": 4.9,
+    "Details": "Full-frame mirrorless camera with exceptional image quality and 4K video capabilities.",
+    "Update": "2023-10-19"
+  },
+  {
+    "Id": 3,
+    "Name": "Sony Xperia 5 III",
+    "Image": "https://i.ibb.co/4ZHkcjZ/Sony-Xperia-5-III.jpg",
+    "Band": "Sony",
+    "Type": "Phone",
+    "Price": 949.99,
+    "Rating": 4.7,
+    "Details": "Flagship smartphone with a 4K display, high-end camera, and powerful performance.",
+    "Update": "2023-10-19"
+  },
+  {
+    "Id": 4,
+    "Name": "PlayStation 5",
+    "Image": "https://i.ibb.co/R7cZxR0/CITYPNG-COM-Playstation-5-Sony-Ps5-Side-View-With-Controller-2000x2000.png",
+    "Band": "Sony",
+    "Type": "Gaming Console",
+    "Price": 499.99,
+    "Rating": 4.8,
+    "Details": "The PlayStation 5 is Sony's latest gaming console, featuring cutting-edge technology, high-quality graphics, and an extensive game library.",
+    "Update": "2023-10-19"
+  }
+]
