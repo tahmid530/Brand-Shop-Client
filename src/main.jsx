@@ -16,6 +16,7 @@ import Oppo from './components/Oppo';
 import Login from './components/Login';
 import Register from './components/Register';
 import AuthProvider from './components/AuthProvider';
+import PrivateRoute from './components/PrivateRoute';
 // import App from './App';
 
 const router = createBrowserRouter([
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/apple",
-        element: <Apple></Apple>,
+        element: <PrivateRoute><Apple></Apple></PrivateRoute>,
       },
       {
         path: "/google",
