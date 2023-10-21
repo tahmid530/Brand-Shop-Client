@@ -14,8 +14,8 @@ export default function Brands() {
 
     return (
         <>
-            <h1 className="text-[#1C1B1B] text-center text-5xl font-bold mt-20 my-10">Our Services</h1>
-            <div className="flex flex-col-reverse lg:flex-row gap-6 lg:justify-evenly mb-10 lg:my-10">
+            <h1 className="text-[#1C1B1B] text-center text-5xl font-bold mt-20 my-10">Our Partner</h1>
+            <div className="flex flex-col-reverse lg:flex-row gap-6 lg:justify-evenly mb-10 lg:my-20">
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-20">
                     {

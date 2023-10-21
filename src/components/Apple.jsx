@@ -16,23 +16,32 @@ const Apple = () => {
         <>
             <div className="carousel w-full mb-20">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/1Z2Vf34/pexels-torsten-dettlaff-3623358.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/1Z2Vf34/pexels-torsten-dettlaff-3623358.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
+                        <p className="text-center text-red-600 text-3xl font-bold">Experience the Future with Apple's Innovative Technology. 
+                        <br />Discover the latest Apple products that redefine convenience, style, and performance. Explore our range of iPhones, iPads, MacBooks, and more. 
+                        <br />Elevate your tech game with Apple today!</p>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/hR52cW6/Stock-Snap-7-RL3-YOUPT4.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/hR52cW6/Stock-Snap-7-RL3-YOUPT4.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
+                        <p className="text-center text-black text-3xl font-bold">Experience the Future with Apple's Innovative Technology. 
+                        <br />Discover the latest Apple products that redefine convenience, style, and performance. Explore our range of iPhones, iPads, MacBooks, and more. 
+                        <br />Elevate your tech game with Apple today!</p>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/2gCyjPc/jonathan-francisca-8360-Wm-L52kg-unsplash.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/2gCyjPc/jonathan-francisca-8360-Wm-L52kg-unsplash.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
+                        <p className="text-center text-green-600 text-3xl font-bold">Experience the Future with Apple's Innovative Technology. 
+                        <br />Discover the latest Apple products that redefine convenience, style, and performance. Explore our range of iPhones, iPads, MacBooks, and more. 
+                        <br />Elevate your tech game with Apple today!</p>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>

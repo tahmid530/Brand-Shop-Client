@@ -38,14 +38,14 @@ const Header = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">IIIIIIIII</a>
+                    <a className="btn btn-ghost normal-case text-3xl font-bold text-blue-500">TechFusion</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navLinks}
                     </ul>
                 </div>
-                <div className="ml-[570px]">
+                <div className="ml-0 lg:ml-[570px]">
                     <DarkMode></DarkMode>
                 </div>
             </div>
