@@ -32,7 +32,6 @@ export default function Brands() {
                                     </Link>
                                 </button>
                             </div>
-
                         ))
                     }
                 </div>

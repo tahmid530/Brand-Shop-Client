@@ -13,13 +13,20 @@ import Intel from './components/Intel';
 import Samsung from './components/Samsung';
 import Sony from './components/Sony';
 import Oppo from './components/Oppo';
+import Login from './components/Login';
+import Register from './components/Register';
+import AuthProvider from './components/AuthProvider';
+// import App from './App';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <ErrorPage></ErrorPage>,
     children: [
+      // {
+      //   path: "/",
+      //   element: <App></App>
+      // },
       {
         path: "/",
         element: <Home></Home>
@@ -47,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/oppo",
         element: <Oppo></Oppo>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
       }
     ]
   },
@@ -54,6 +69,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
