@@ -3,15 +3,16 @@ import Header from "./Header";
 import Footer from './Footer';
 
 
-
 const Root = () => {
+
+
     return (
         <>
-            <div className='max-w-[1920px] mx-auto'>
+            <div className=''>
                 <Header></Header>
                 <Outlet></Outlet>
+                <Footer></Footer>
             </div>
-            <Footer></Footer>
         </>
     );
 };

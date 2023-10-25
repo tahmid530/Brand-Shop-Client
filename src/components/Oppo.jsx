@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Oppo = () => {
-    const [oppos, setOppos] = useState([]);
+    const products = useLoaderData();
 
-    useEffect(() => {
-        fetch('oppos.json')
-            .then(res => res.json())
-            .then(data => setOppos(data))
-    }, [])
+    const remainingData = products.filter(product => product.brand === 'Oppo');
+
+    if (remainingData.length === 0) {
+        return ('Products Not Found')
+    }
+
 
 
     return (
@@ -36,26 +36,26 @@ const Oppo = () => {
                     </div>
                 </div>
             </div>
+
+
+
             <div className="flex flex-col-reverse lg:flex-row gap-6 lg:justify-evenly mb-10 lg:my-10">
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20">
                     {
-                        oppos.map(oppo => (
+                        remainingData.map(product => (
 
 
-                            <div key={oppo.Id} className="card w-full lg:w-96 bg-base-200 shadow-2xl mx-auto lg:mx-0">
-                                {/* <Link to={`${oppo.name}`}> */}
-                                <img src={oppo.Image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
+                            <div key={product._id} className="card w-full lg:w-96 bg-base-200 shadow-2xl mx-auto lg:mx-0">
+                                <img src={product.image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
                                 <div className="card-body items-center text-center">
-                                    <h2 className="card-title text-black text-md font-medium">{oppo.Name}</h2>
-                                    <h2>Price: {oppo.Price}</h2>
-                                    <h2>Rating: {oppo.Rating}/5</h2>
+                                    <h2 className="card-title text-black text-md font-medium">{product.name}</h2>
+                                    <h2>Price: ${product.price}</h2>
+                                    <h2>Rating: {product.rating}/5</h2>
                                 </div>
                                 <div className="flex justify-center gap-3 pb-5">
-                                    <Link to='/{oppo.Details}'><button className="btn btn-outline">Details</button></Link>
-                                    <Link to='/{oppo.Update}'><button className="btn btn-outline">Update</button></Link>
+                                    <Link to='/details'><button className="btn btn-outline">Details</button></Link>
                                 </div>
-                                {/* </Link> */}
                             </div>
 
                         ))

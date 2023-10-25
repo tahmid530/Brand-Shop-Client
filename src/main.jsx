@@ -18,7 +18,14 @@ import Register from './components/Register';
 import AuthProvider from './components/AuthProvider';
 import PrivateRoute from './components/PrivateRoute';
 import ErrorPage from './components/ErrorPage';
-// import Contact from './components/Contact';
+import Products from './components/Products';
+import ShowProducts from './components/ShowProducts';
+import Details from './components/details';
+import UpdateForm from './components/UpdateForm';
+import Cart from './components/Cart';
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -26,37 +33,44 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-      // {
-      //   path: "/",
-      //   element: <App></App>
-      // },
       {
         path: "/",
         element: <Home></Home>
       },
       {
-        path: "/apple",
-        element: <PrivateRoute><Apple></Apple></PrivateRoute>,
+        path: "/showproducts",
+        element: <ShowProducts></ShowProducts>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
-        path: "/google",
+        path: "/apple",
+        element: <PrivateRoute><Apple></Apple></PrivateRoute>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: "/Google",
         element: <Google></Google>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: "/intel",
-        element: <Intel></Intel>
+        element: <Intel></Intel>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: "/samsung",
-        element: <Samsung></Samsung>
+        element: <Samsung></Samsung>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: "/sony",
-        element: <Sony></Sony>
+        element: <Sony></Sony>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: "/oppo",
-        element: <Oppo></Oppo>
+        element: <Oppo></Oppo>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: "/login",
@@ -65,6 +79,25 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/products",
+        element: <PrivateRoute><Products></Products></PrivateRoute>
+      },
+      {
+        path: "/details",
+        element: <Details></Details>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: "/products/:id",
+        element: <UpdateForm></UpdateForm>,
+        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+      },
+      {
+        path: "/carts",
+        element: <Cart></Cart>,
+        loader: () => fetch('http://localhost:5000/carts')
       },
     ]
   },

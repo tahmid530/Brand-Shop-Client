@@ -3,13 +3,13 @@
 const Contact = () => {
     return (
         <>
-            <div className="my-15">
-                <h3 className="text-5xl text-center font-bold my-10">Contact Us</h3>
+            <div className="my-15 lg:p-10 dark:text-white text-black bg-white dark:bg-black">
+                <h3 className="text-5xl text-center font-bold py-10">Contact Us</h3>
                 <div className="flex flex-col lg:flex-row items-center">
                     <div>
                         <img src="https://i.ibb.co/T8VyPvw/undraw-Contact-us-re-4qqt.png" alt="" />
                     </div>
-                    <div className="space-y-6 px-4 lg:px-0">
+                    <div className="space-y-6 p-4 md:p-6">
                         <p className="text-2xl font-medium">We are always here to assist you with any questions or concerns. You can reach out to us through the following means:</p>
                         <p className="text-xl font-semibold">📧 Email: partyperfectionists111@gmail.com</p>
                         <p className="text-xl font-semibold">📞 Phone: +1 800 889 9898</p>

@@ -7,8 +7,7 @@
     "Type": "Computer",
     "Price": 349.99,
     "Rating": 4.8,
-    "Details": "The Intel Core i7-10700K is a high-performance processor with 8 cores and 16 threads. It's ideal for gaming and content creation.",
-    "Update": "2023-10-19"
+    "Details": "The Intel Core i7-10700K is a high-performance processor with 8 cores and 16 threads. It's ideal for gaming and content creation."
   },
   {
     "Id": 2,
@@ -18,19 +17,17 @@
     "Type": "Computer",
     "Price": 249.99,
     "Rating": 4.5,
-    "Details": "The Intel Core i5-11600K is a mid-range CPU with 6 cores and 12 threads, perfect for gaming and everyday tasks.",
-    "Update": "2023-10-19"
+    "Details": "The Intel Core i5-11600K is a mid-range CPU with 6 cores and 12 threads, perfect for gaming and everyday tasks."
   },
   {
     "Id": 3,
     "Image": "https://i.ibb.co/sycBfcG/i9.jpg",
     "Name": "Intel Core i9-13900K",
     "Brand": "Intel",
-    "Type": "Computer",
+    "Type": "CPU",
     "Price": 699.99,
     "Rating": 4.9,
-    "Details": "The Intel Core i9-12900K is a high-end CPU with 16 cores and 24 threads, designed for power users and enthusiasts.",
-    "Update": "2023-10-19"
+    "Details": "The Intel Core i9-12900K is a high-end CPU with 16 cores and 24 threads, designed for power users and enthusiasts."
   },
   {
     "Id": 4,
@@ -40,7 +37,6 @@
     "Type": "Computer",
     "Price": 899.99,
     "Rating": 4.7,
-    "Details": "The Intel Xeon E-2278G is a server-grade CPU with 8 cores and 16 threads, suitable for workstation and server applications.",
-    "Update": "2023-10-19"
+    "Details": "The Intel Xeon E-2278G is a server-grade CPU with 8 cores and 16 threads, suitable for workstation and server applications."
   }
 ]

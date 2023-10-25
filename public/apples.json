@@ -7,8 +7,7 @@
       "Type": "Phone",
       "Price": 1299.99,
       "Rating": 4.7,
-      "Details": "https://www.apple.com/iphone-13-pro/",
-      "Update": "https://www.apple.com/iphone-13-pro/update"
+      "Details": "https://www.apple.com/iphone-13-pro/"
     },
     {
       "Id": 2,
@@ -18,8 +17,7 @@
       "Type": "Computer",
       "Price": 1299.99,
       "Rating": 4.9,
-      "Details": "https://www.apple.com/macbook-pro/",
-      "Update": "https://www.apple.com/macbook-pro/update"
+      "Details": "https://www.apple.com/macbook-pro/"
     },
     {
       "Id": 3,
@@ -29,8 +27,7 @@
       "Type": "Headphone",
       "Price": 249.99,
       "Rating": 4.8,
-      "Details": "https://www.apple.com/airpods-pro/",
-      "Update": "https://www.apple.com/airpods-pro/update"
+      "Details": "https://www.apple.com/airpods-pro/"
     },
     {
       "Id": 4,
@@ -40,8 +37,7 @@
       "Type": "Tablet",
       "Price": 599.99,
       "Rating": 4.6,
-      "Details": "https://www.apple.com/ipad-air/",
-      "Update": "https://www.apple.com/ipad-air/update"
+      "Details": "https://www.apple.com/ipad-air/"
     }
   ]
   

@@ -19,8 +19,8 @@ const Header = () => {
 
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/products'>Add Products</NavLink></li>
-        <li><NavLink to='/cart'>My Cart</NavLink></li>
-        {/* <li><NavLink to='/login'>Login</NavLink></li> */}
+        <li><NavLink to='/showproducts'>Show Products</NavLink></li>
+        <li><NavLink to='/carts'>My Cart</NavLink></li>
         <li>{user ? <NavLink onClick={handleSignOut}>Log Out</NavLink> : <NavLink to="/login">Login</NavLink>}</li>
 
     </>
@@ -28,7 +28,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar dark:text-white text-black bg-base-100 dark:dark:bg-slate-800">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,7 +45,7 @@ const Header = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="ml-0 lg:ml-[570px]">
+                <div className="flex items-center ml-32 md:ml-96 lg:ml-[570px]">
                     <DarkMode></DarkMode>
                 </div>
             </div>

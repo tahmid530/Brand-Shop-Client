@@ -1,37 +1,47 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Google = () => {
-    const [googles, setGoogles] = useState([]);
+    const products = useLoaderData();
 
-    useEffect(() => {
-        fetch('googles.json')
-            .then(res => res.json())
-            .then(data => setGoogles(data))
-    }, [])
+    const remainingData = products.filter(product => product.brand === 'Google');
 
 
     return (
         <>
             <div className="carousel w-full mb-20">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/Fmj1sny/pexels-elena-chioru-15802450.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/Fmj1sny/pexels-elena-chioru-15802450.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
+                        <p className="text-center text-black text-md md:text-3xl font-bold">
+                            Explore the Google Ecosystem: Discover the latest in innovation with Google's cutting-edge products.
+                            <br />From smartphones to smart home devices,
+                            <br />Google delivers seamless technology that enhances your life.
+                        </p>
                         <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/ZGWyrvS/pexels-czapp-rp-d-10774600.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/ZGWyrvS/pexels-czapp-rp-d-10774600.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
+                        <p className="text-center text-white text-md md:text-3xl font-bold">
+                            Explore the Google Ecosystem: Discover the latest in innovation with Google's cutting-edge products.
+                            <br />From smartphones to smart home devices,
+                            <br />Google delivers seamless technology that enhances your life.
+                        </p>
                         <a href="#slide3" className="btn btn-circle">❯</a>
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src={'https://i.ibb.co/qMtxX3d/digital-marketing-1725340.jpg'} alt="" className="w-full" />
+                    <img src={'https://i.ibb.co/qMtxX3d/digital-marketing-1725340.jpg'} alt="" className="w-full opacity-50" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
+                        <p className="text-center text-orange-500 text-md md:text-3xl font-bold">
+                            Explore the Google Ecosystem: Discover the latest in innovation with Google's cutting-edge products.
+                            <br />From smartphones to smart home devices,
+                            <br />Google delivers seamless technology that enhances your life.
+                        </p>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -40,22 +50,19 @@ const Google = () => {
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20">
                     {
-                        googles.map(google => (
+                        remainingData.map(product => (
 
 
-                            <div key={google.Id} className="card w-full lg:w-96 bg-base-200 shadow-2xl mx-auto lg:mx-0">
-                                    {/* <Link to={`${google.name}`}> */}
-                                        <img src={google.Image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
-                                        <div className="card-body items-center text-center">
-                                            <h2 className="card-title text-black text-md font-medium">{google.Name}</h2>
-                                            <h2>Price: {google.Price}</h2>
-                                            <h2>Rating: {google.Rating}/5</h2>
-                                        </div>
-                                        <div className="flex justify-center gap-3 pb-5">
-                                            <Link to='/{google.Details}'><button className="btn btn-outline">Details</button></Link>
-                                            <Link to='/{google.Update}'><button className="btn btn-outline">Update</button></Link>
-                                        </div>
-                                    {/* </Link> */}
+                            <div key={product._id} className="card w-full lg:w-96 bg-base-200 shadow-2xl mx-auto lg:mx-0">
+                                <img src={product.image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title text-black text-md font-medium">{product.name}</h2>
+                                    <h2>Price: ${product.price}</h2>
+                                    <h2>Rating: {product.rating}/5</h2>
+                                </div>
+                                <div className="flex justify-center gap-3 pb-5">
+                                    <Link to='/details'><button className="btn btn-outline">Details</button></Link>
+                                </div>
                             </div>
 
                         ))
