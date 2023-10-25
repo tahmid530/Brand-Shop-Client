@@ -14,7 +14,8 @@ const Register = () => {
             'Welcome!',
             'Registration Sucessfully!',
             'success'
-        );}
+        );
+    }
 
     const handleRegister = e => {
         e.preventDefault();

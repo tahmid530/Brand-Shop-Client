@@ -49,28 +49,28 @@ const Cart = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row gap-6 lg:justify-evenly mb-10 lg:my-10 py-5 bg-white dark:bg-black">
 
-        <div className="card grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20">
-            {
-                carts.map(cart => (
+            <div className="card grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20">
+                {
+                    carts.map(cart => (
 
 
-                    <div key={cart._id} className="card w-full lg:w-96 bg-base-200 dark:bg-slate-600 shadow-2xl mx-auto lg:mx-0">
+                        <div key={cart._id} className="card w-full lg:w-96 bg-base-200 dark:bg-slate-600 shadow-2xl mx-auto lg:mx-0">
 
-                                <img src={cart.image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
-                                <div className="card-body items-center text-center text-black dark:text-white">
-                                    <h2 className="card-title text-md font-medium">{cart.name}</h2>
-                                    <h2>Price: ${cart.price}</h2>
-                                    <h2>Rating: {cart.rating}/5</h2>
-                                </div>
-                                <div className="flex justify-center gap-3 pb-5">
-                                    <button className="btn btn-outline dark:bg-white dark:text-black dark:hover:bg-slate-600" onClick={() => handleDelete(cart._id)}>Delete From Cart</button>
-                                </div>
-                    </div>
-                    
-                ))
-            }
-        </div>
-    </div >
+                            <img src={cart.image} alt="" className="rounded-xl w-[300px] h-[200px] mx-auto mt-10" />
+                            <div className="card-body items-center text-center text-black dark:text-white">
+                                <h2 className="card-title text-md font-medium">{cart.name}</h2>
+                                <h2>Price: ${cart.price}</h2>
+                                <h2>Rating: {cart.rating}/5</h2>
+                            </div>
+                            <div className="flex justify-center gap-3 pb-5">
+                                <button className="btn btn-outline dark:bg-white dark:text-black dark:hover:bg-slate-600" onClick={() => handleDelete(cart._id)}>Delete From Cart</button>
+                            </div>
+                        </div>
+
+                    ))
+                }
+            </div>
+        </div >
     );
 };
 export default Cart;

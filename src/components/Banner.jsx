@@ -33,7 +33,7 @@ const Banner = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <p className="text-center text-black text-5xl font-bold">Discover Tomorrow's Tech Today <br />
-                           Explore the Latest Gadgets and Electronics from <br /> Top Brands</p>
+                            Explore the Latest Gadgets and Electronics from <br /> Top Brands</p>
                         <a href="#slide4" className="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const Banner = () => {
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <p className="text-center text-white text-5xl font-bold">Discover Tomorrow's Tech Today <br />
-                           Explore the Latest Gadgets and Electronics from <br /> Top Brands</p>
+                            Explore the Latest Gadgets and Electronics from <br /> Top Brands</p>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
