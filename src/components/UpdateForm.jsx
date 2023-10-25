@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const UpdateForm = () => {
     const updateData = useLoaderData()
-    console.log(updateData);
+
     const handleUpdate = event => {
         event.preventDefault();
 
@@ -21,7 +21,7 @@ const UpdateForm = () => {
         const updateProducts = { name, brand, type, price, description, rating, image }
         console.log(updateProducts);
 
-        fetch(`http://localhost:5000/products/${updateData._id}`, {
+        fetch(`https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products/${updateData._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

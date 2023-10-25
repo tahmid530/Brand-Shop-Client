@@ -6,9 +6,8 @@ import Swal from "sweetalert2";
 const Details = () => {
     const products = useLoaderData();
     const [updates, setUpdates] = useState(products);
-    // const [cart, setCart] = useState([]);
 
-    const remainingData = products.filter(product => product._id === product._id);
+    // const remainingData = products.filter(product => product._id === product._id);
 
 
     const handleDelete = _id => {
@@ -27,7 +26,7 @@ const Details = () => {
                 if (result.isConfirmed) {
 
 
-                    fetch(`http://localhost:5000/products/${_id}`, {
+                    fetch(`https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products/${_id}`, {
                         method: 'DELETE'
                     })
                         .then(res => res.json())
@@ -55,7 +54,7 @@ const Details = () => {
         const modifiedData = { ...products };
         keysToRemove.forEach(_id => delete modifiedData[_id]);
 
-        fetch('http://localhost:5000/carts', {
+        fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/carts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -86,7 +85,7 @@ const Details = () => {
 
                 <div className="">
                     {
-                        remainingData.map((product) => (
+                        updates.map((product) => (
 
                             <div key={product._id} className="card w-full lg:w-full bg-gray-300 shadow-lg mx-auto border-4">
 

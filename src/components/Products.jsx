@@ -18,7 +18,7 @@ const Products = () => {
 
         console.log(newProducts);
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

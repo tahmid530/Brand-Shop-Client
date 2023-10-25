@@ -40,37 +40,37 @@ const router = createBrowserRouter([
       {
         path: "/showproducts",
         element: <ShowProducts></ShowProducts>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/apple",
         element: <PrivateRoute><Apple></Apple></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/Google",
         element: <Google></Google>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/intel",
         element: <Intel></Intel>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/samsung",
         element: <Samsung></Samsung>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/sony",
         element: <Sony></Sony>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/oppo",
         element: <Oppo></Oppo>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/login",
@@ -87,17 +87,17 @@ const router = createBrowserRouter([
       {
         path: "/details",
         element: <Details></Details>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products')
       },
       {
         path: "/products/:id",
         element: <UpdateForm></UpdateForm>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/products/${params.id}`)
       },
       {
         path: "/carts",
         element: <Cart></Cart>,
-        loader: () => fetch('http://localhost:5000/carts')
+        loader: () => fetch('https://assignment-10-mongodb-4mrvipihw-tahmid530.vercel.app/carts')
       },
     ]
   },
